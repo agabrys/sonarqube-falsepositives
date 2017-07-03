@@ -39,7 +39,7 @@ public class S2222 {
                 if (CollectionUtils.isNotEmpty(getDynamicTypesBlacklist())) {
                     for (final String type : getDynamicTypesBlacklist()) {
                         if (typeService.isAssignableFrom(type, code)
-                                || (ViewTypeModel._TYPECODE.equals(type) && typeService.getTypeForCode(code) instanceof ViewTypeModel)) {
+                                || ViewTypeModel._TYPECODE.equals(type) && typeService.getTypeForCode(code) instanceof ViewTypeModel) {
                             staticType = false;
                             break;
                         }
@@ -80,7 +80,7 @@ public class S2222 {
         return new Random().nextBoolean() ? null : new ArrayList<>();
     }
 
-    private DataType convertType(TypeModel typeForCode, boolean lightWeight, Context context) {
+    private DataType convertType(final TypeModel typeForCode, final boolean lightWeight, final Context context) {
         return new Random().nextBoolean() ? null : new DataType();
     }
 
@@ -95,11 +95,11 @@ public class S2222 {
     @SuppressWarnings("serial")
     public static class TypeNotFoundException extends Exception {
 
-        public TypeNotFoundException(String message, Throwable cause) {
+        public TypeNotFoundException(final String message, final Throwable cause) {
             super(message, cause);
         }
 
-        public TypeNotFoundException(String message) {
+        public TypeNotFoundException(final String message) {
             super(message);
         }
     }
@@ -110,7 +110,7 @@ public class S2222 {
             return new Random().nextBoolean() ? Mockito.mock(TypeModel.class) : Mockito.mock(ViewTypeModel.class);
         }
 
-        public boolean isAssignableFrom(String type, String code) {
+        public boolean isAssignableFrom(final String type, final String code) {
             return type.equals(code);
         }
     }
