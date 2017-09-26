@@ -5,6 +5,9 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
+/**
+ * @see https://groups.google.com/d/topic/sonarqube/-LSFJN6KPPg/discussion
+ */
 public class S2175 {
 
     @SuppressWarnings("unchecked")

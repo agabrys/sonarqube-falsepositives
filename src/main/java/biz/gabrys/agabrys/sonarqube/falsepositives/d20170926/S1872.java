@@ -2,6 +2,9 @@ package biz.gabrys.agabrys.sonarqube.falsepositives.d20170926;
 
 import java.util.Map;
 
+/**
+ * @see https://groups.google.com/d/topic/sonarqube/1cH0TMmLhj0/discussion
+ */
 public class S1872 {
 
     public boolean compareObjectsClassNamees(final Object object1, final Object object2) {

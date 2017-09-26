@@ -12,6 +12,9 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import org.apache.commons.collections.CollectionUtils;
 import org.mockito.Mockito;
 
+/**
+ * @see https://groups.google.com/d/topic/sonarqube/3dHQNRWR2vE/discussion
+ */
 public class S2222 {
 
     private final ReadWriteLock cacheLock = new ReentrantReadWriteLock(false);
