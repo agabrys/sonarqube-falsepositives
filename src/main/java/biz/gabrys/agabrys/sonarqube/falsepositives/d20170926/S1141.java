@@ -11,6 +11,9 @@ import java.util.logging.Logger;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 
+/**
+ * @see https://groups.google.com/d/topic/sonarqube/1BrKgd6meuw/discussion
+ */
 public class S1141 {
 
     private static final Logger LOG = Logger.getLogger(S1141.class.getName());
