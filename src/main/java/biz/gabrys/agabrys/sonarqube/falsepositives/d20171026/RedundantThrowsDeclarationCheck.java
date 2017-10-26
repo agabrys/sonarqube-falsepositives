@@ -1,5 +1,8 @@
 package biz.gabrys.agabrys.sonarqube.falsepositives.d20171026;
 
+/**
+ * @see https://groups.google.com/d/topic/sonarqube/YY9Zn1KrHbY/discussion
+ */
 public interface RedundantThrowsDeclarationCheck {
 
     // Ok, SonarQube doesn't complain about MyException
