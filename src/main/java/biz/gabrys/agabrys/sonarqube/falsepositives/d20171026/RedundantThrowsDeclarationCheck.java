@@ -9,7 +9,7 @@ public interface RedundantThrowsDeclarationCheck {
     Object doSomething(Object object) throws MyException;
 
     // False Positive, SonarQube complains about MyException
-    default Object doSomethingDefault(Object object) throws MyException {
+    default Object doSomethingDefault(final Object object) throws MyException {
         // default implementation - backward compatibility
         return object;
     }

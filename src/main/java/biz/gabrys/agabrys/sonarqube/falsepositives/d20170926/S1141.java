@@ -17,7 +17,7 @@ import javax.xml.bind.JAXBException;
 public class S1141 {
 
     private static final Logger LOG = Logger.getLogger(S1141.class.getName());
-    private final ConcurrentMap<Set<Class<?>>, JAXBContext> contextCache = new ConcurrentHashMap<Set<Class<?>>, JAXBContext>();
+    private final ConcurrentMap<Set<Class<?>>, JAXBContext> contextCache = new ConcurrentHashMap<>();
 
     public JAXBContext createContext(final Class<?>... jaxbClasses) throws JAXBException {
         if (jaxbClasses == null || jaxbClasses.length == 0) {
