@@ -1,5 +1,8 @@
 package biz.gabrys.agabrys.sonarqube.falsepositives.d20171218;
 
+/**
+ * @see https://groups.google.com/d/topic/sonarqube/4vbfYPaGT1s/discussion
+ */
 public class S2157 {
 
     public abstract static class ClassFromExternalFramework {
