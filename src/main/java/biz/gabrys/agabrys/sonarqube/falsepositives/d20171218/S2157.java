@@ -14,16 +14,16 @@ public class S2157 {
         }
 
         public Object clone() {
-            final ClassFromExternalFramework mapple;
+            final ClassFromExternalFramework obj;
             try {
-                mapple = (ClassFromExternalFramework) super.clone();
+                obj = (ClassFromExternalFramework) super.clone();
             } catch (CloneNotSupportedException e) {
                 throw new IllegalStateException(e);
             }
             if (array != null) {
-                mapple.array = array.clone();
+                obj.array = array.clone();
             }
-            return mapple;
+            return obj;
         }
 
         public abstract void doSomething();
