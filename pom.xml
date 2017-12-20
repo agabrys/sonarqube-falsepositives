@@ -56,7 +56,7 @@
                 <plugin>
                     <groupId>nl.geodienstencentrum.maven</groupId>
                     <artifactId>sass-maven-plugin</artifactId>
-                    <version>3.5.0</version>
+                    <version>3.5.1</version>
                     <configuration>
                         <sassOptions>
                             <always_update>true</always_update>
