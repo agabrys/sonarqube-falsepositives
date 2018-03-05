@@ -10,9 +10,9 @@ import java.util.Set;
  */
 public interface S2386 {
 
-    Set<Object> SINGLETON_UNMODIFICABLE_SET = Collections.singleton(new Object());
+    Set<Object> SINGLETON_UNMODIFIABLE_SET = Collections.singleton(new Object());
 
-    List<Object> SINGLETON_UNMODIFICABLE_LIST = Collections.singletonList(new Object());
+    List<Object> SINGLETON_UNMODIFIABLE_LIST = Collections.singletonList(new Object());
 
-    Map<Object, Object> SINGLETON_UNMODIFICABLE_MAP = Collections.singletonMap(new Object(), new Object());
+    Map<Object, Object> SINGLETON_UNMODIFIABLE_MAP = Collections.singletonMap(new Object(), new Object());
 }
