@@ -1,0 +1,10 @@
+@mixin view-mixin($key) {
+
+	&-#{$key}-view {
+		color: red;
+	}
+}
+
+.foo {
+	@include view-mixin('key');
+}
