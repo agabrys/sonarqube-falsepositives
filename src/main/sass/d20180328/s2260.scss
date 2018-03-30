@@ -1,11 +1,10 @@
 // see: https://github.com/racodond/sonar-css-plugin/issues/96
 @mixin view-mixin($key) {
-
-	&-#{$key}-view {
-		color: red;
-	}
+    &-#{$key}-view {
+        color: red;
+    }
 }
 
 .foo {
-	@include view-mixin('key');
+    @include view-mixin('key');
 }
