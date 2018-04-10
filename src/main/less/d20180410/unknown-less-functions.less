@@ -1,0 +1,21 @@
+// see https://github.com/racodond/sonar-css-plugin/issues/95
+@media (max-width: 768px) {
+    .navtab-info--dates {
+        padding-left: 1%;
+    }
+}
+
+.customization-form__variation-data, .customization-form__variation-menu {
+    display: inline-block;
+}
+
+.client-library__some-data {
+    &:extend(.client-list__some-data);
+}
+
+.variation-layout--selected:extend(.variation-layout) {
+    color: #000;
+    .status-active, .status-inactive, .status-ignore {
+        color: #000;
+    }
+}

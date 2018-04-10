@@ -64,6 +64,14 @@
                     <version>2.20.1</version>
                 </plugin>
                 <plugin>
+                    <groupId>biz.gabrys.maven.plugins</groupId>
+                    <artifactId>lesscss-maven-plugin</artifactId>
+                    <version>1.2.1</version>
+                    <configuration>
+                        <outputDirectory>${project.build.directory}/less</outputDirectory>
+                    </configuration>
+                </plugin>
+                <plugin>
                     <groupId>nl.geodienstencentrum.maven</groupId>
                     <artifactId>sass-maven-plugin</artifactId>
                     <version>3.5.2</version>
@@ -106,6 +114,17 @@
                 <configuration>
                     <createChecksum>true</createChecksum>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>biz.gabrys.maven.plugins</groupId>
+                <artifactId>lesscss-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>compile</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>nl.geodienstencentrum.maven</groupId>
