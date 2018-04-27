@@ -73,7 +73,7 @@ class NonVolatileAssigmentInOtherMethod {
 
     public static Object getInstance() {
         if (instance == null) {
-            // No issue (False Positive)
+            // No issue (False Negative)
             synchronized (lock) {
                 if (instance == null) {
                     create();
