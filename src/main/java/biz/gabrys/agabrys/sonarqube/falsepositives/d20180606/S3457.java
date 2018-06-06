@@ -5,6 +5,9 @@ import java.util.logging.Logger;
 
 import org.slf4j.LoggerFactory;
 
+/**
+ * @see https://groups.google.com/forum/#!topic/sonarqube/xzd3FOAwVCA/discussion
+ */
 public class S3457 {
 
     private static final String NAME = S3457.class.getName();
