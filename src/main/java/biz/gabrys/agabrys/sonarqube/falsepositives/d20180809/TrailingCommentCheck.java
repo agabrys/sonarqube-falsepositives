@@ -1,5 +1,8 @@
 package biz.gabrys.agabrys.sonarqube.falsepositives.d20180809;
 
+/**
+ * @see https://community.sonarsource.com/t/allow-to-use-empty-comments-by-default-in-trailingcommentcheck-rule/1687?u=agabrys
+ */
 public class TrailingCommentCheck {
 
     private final String name;
