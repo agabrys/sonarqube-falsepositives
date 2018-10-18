@@ -13,11 +13,12 @@ public class S2157 {
             this.array = array;
         }
 
+        @Override
         public Object clone() {
             final ClassFromExternalFramework obj;
             try {
                 obj = (ClassFromExternalFramework) super.clone();
-            } catch (CloneNotSupportedException e) {
+            } catch (final CloneNotSupportedException e) {
                 throw new IllegalStateException(e);
             }
             if (array != null) {
@@ -31,7 +32,7 @@ public class S2157 {
 
     public static class OurClassWhichShouldBeCloneable extends ClassFromExternalFramework implements Cloneable {
 
-        public OurClassWhichShouldBeCloneable(Object[] array) {
+        public OurClassWhichShouldBeCloneable(final Object[] array) {
             super(array);
         }
 
