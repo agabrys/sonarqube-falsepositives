@@ -10,7 +10,7 @@ import java.util.Set;
  */
 public class S2175 {
 
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public void collectModifiedEntriesInternal(final Object value, final Collection<AbstractItemModel> result) {
         final boolean isItem = value instanceof AbstractItemModel;
         final boolean isCollection = !isItem && value instanceof Collection;

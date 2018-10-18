@@ -119,7 +119,7 @@ public class S2222 {
     }
 
     public interface ViewTypeModel extends TypeModel {
-        final String _TYPECODE = "typecode";
+        String _TYPECODE = "typecode";
     }
 
     public interface TypeModel {
