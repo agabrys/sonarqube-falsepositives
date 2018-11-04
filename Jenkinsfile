@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                withMaven(maven: '3.3.9', jdk: '10', mavenLocalRepo: '.repository', publisherStrategy: 'EXPLICIT', options: []) {
+                withMaven(maven: '3.6.0', jdk: '10', mavenLocalRepo: '.repository', publisherStrategy: 'EXPLICIT', options: []) {
                     sh 'mvn install'
                 }
             }
@@ -15,7 +15,7 @@ pipeline {
         stage('SonarQube') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    withMaven(maven: '3.3.9', jdk: '10', mavenLocalRepo: '.repository', publisherStrategy: 'EXPLICIT', options: []) {
+                    withMaven(maven: '3.6.0', jdk: '10', mavenLocalRepo: '.repository', publisherStrategy: 'EXPLICIT', options: []) {
                         sh 'mvn sonar:sonar'
                     }
                 }
